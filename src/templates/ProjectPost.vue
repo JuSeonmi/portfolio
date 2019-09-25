@@ -39,7 +39,7 @@
 query ProjectPost ($path: String!) {
   post: projectPost (path: $path) {
     title
-    date (format: "YYYY")
+    date 
     content
     categories
     project_bg_color
@@ -66,7 +66,7 @@ export default {
   padding: 20vh 0 4rem 0;
 }
 .project-title {
-  font-size: 4rem;
+  font-size: 2rem;
   margin: 0 0 4rem 0;
   padding: 0;
 }

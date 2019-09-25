@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div class="journal">
-      <div class="container journal-container">
+      <div class="journal-container">
 
         <div class="journal-header">
           <h1 v-html="$page.post.title" class="journal-title" />

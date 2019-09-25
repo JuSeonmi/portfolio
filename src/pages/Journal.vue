@@ -31,6 +31,7 @@ query Journal {
       node {
         id
         path
+		link
         title
         excerpt
       }

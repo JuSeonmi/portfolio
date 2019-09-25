@@ -1,18 +1,18 @@
 <template>
-  <div class="layout" :class="{ 'sticky-header': $route.path === '/' }">
-    <Header />
+  <div class="layout">
+
     <slot/>
     <Footer />
   </div>
 </template>
 
 <script>
-import Header from "@/components/Header"
+
 import Footer from "@/components/Footer"
 
 export default {
   components: {
-    Header,
+  
     Footer
   }
 }
@@ -33,8 +33,8 @@ body {
   margin:0;
   padding: 0;
   font-size: 16px;
-  background: var(--color-base);
-  color: var(--color-contrast);
+  background: #000;
+  color: #fff;
   transition: background 0.5s ease;
 }
 
@@ -58,14 +58,15 @@ h1 {
 }
 
 .container {
-  max-width: 1200px;
+  display: grid;
+  grid-template-columns:  1fr;
   margin: 0 auto;
   padding: 0 2rem;
 }
 
-@media (min-width: 860px) {
+@media (min-width: 768px) {
   .container {
-    padding: 0 6rem;
+    grid-template-columns: 300px 1fr;
   }
 }
 

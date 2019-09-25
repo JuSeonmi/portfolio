@@ -1,14 +1,12 @@
 <template>
-    <div>
-        <div class="latest-journals-heading container">
-        <span class="label">Latest and greatest</span>
-        </div>
+    <div class="posts">
+       <h2>Posts</h2>
         <div class="latest-journals">
-        <div class="container">
-            <g-link :to="item.node.path" class="journal" v-for="item in journals" :key="item.node.id">
-              <h3 class="journal-title">{{ item.node.title }}</h3>
-            </g-link>
-        </div>
+			<div class="journal" v-for="item in journals" :key="item.node.id">
+			<a :href="item.node.link" target="_blank">
+			<h3 class="journal-title">{{ item.node.title }}</h3>
+			</a>
+			</div>
         </div>
     </div>
 </template>
@@ -25,19 +23,17 @@ export default {
 </script>
 
 <style scoped>
-.latest-journals-heading {
-  margin-top: 6rem;
-  margin-bottom: 1rem;
-  font-size: 0.6rem;
-  font-weight: 400;
-  text-transform: uppercase;
-}
+
 .latest-journals {
+      display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;	
   max-width: 100%;
   margin: 0 2rem;
   border: 1px solid var(--color-base-1);
 }
 .latest-journals > .container {
+
   display: flex;
   flex-wrap: wrap;
 }

@@ -1,44 +1,22 @@
 <template>
-    <div class="projects">
-		<h2>Projects</h2>
-		<div class="projects_inner">
-			<div class="project" v-for="item in projects" :key="item.node.id" >
-				<g-link :to="item.node.path" class="project-link">
-					<g-image
-						:src="item.node.thumbnail"
-						:alt="item.node.title"
-						class="thumbnail"
-					/>
-					<h3 class="project-title">{{ item.node.title }}</h3>
-					<div class="categories">
-						<!-- <span class="category" v-for="(item, index) in item.node.categories" :key="index">{{ item }}</span><br> -->
-						<span class="date" v-for="(item, index) in item.node.date" :key="index">{{ item }}</span>
-					</div>
-				</g-link>
-			</div>
-		</div>
+    <div class="skills">
+		<h2>Skills</h2>
+		
     </div>
 </template>
 
 <script>
-export default {
-    props: {
-        projects: {
-            type: Array,
-            required: true
-        }
-    }
-}
+export default {}
 </script>
 
 <style scoped>
 .projects_inner {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 2rem;
+  grid-gap: 1rem;
 }
 .project {
-
+  /* grid-column: auto / span 2; */
   text-align: center;
 }
 .project-link {
