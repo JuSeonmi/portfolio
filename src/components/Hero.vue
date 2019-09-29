@@ -3,6 +3,9 @@
 		<div class="hero-photo" v-html="settings.hero_photo" />
         <h1 class="hero-title" v-html="settings.hero_title" />
         <h2 class="hero-subtitle" v-html="settings.hero_subtitle" />
+		<span class="spin">:)</span>
+
+		
     </div>
 </template>
 
@@ -19,7 +22,6 @@ export default {
 <style>
 .hero {
     grid-row: span 3;
-    width: 400px;
     padding: 4rem 0 1rem 0;
 }
 
@@ -27,7 +29,7 @@ export default {
     font-size: 2rem;
     font-weight: 700;
     padding: 0;
-    margin: 0 0 2rem 0;
+    margin: 1rem 0 2rem 0;
 }
 .hero-title p,
 .hero-subtitle p {
@@ -35,7 +37,8 @@ export default {
     padding: 0;
 }
 .hero-subtitle {
-    font-size: 1.15em;
+	display: inline-block;
+    font-size: 1em;
     font-weight: 400;
     line-height: 1.68;
     padding: 0;
@@ -48,6 +51,42 @@ export default {
 	background-image: url(http://newhippy.cafe24.com/portfolio/images/widthGM.jpg);
 	background-size: cover;
 	background-position: center center;
-	border-radius: 10px;
+	border-radius: 100%;
+	animation: hover 2s infinite ease-in-out alternate;
 }
+.spin {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 5px;
+    -webkit-animation: spin 2s infinite linear;
+    animation: spin 2s infinite linear;
+	color: #ffc000;
+    font-size: 20px;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes hover {
+  0% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(-3px);
+  }
+}
+
 </style>

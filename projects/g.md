@@ -1,7 +1,7 @@
 ---
-logo: "/uploads/skplanet.jpg"
-title: SK플래닛 Syrup Store 고도화 
-date: 2015.04 ~ 2015.05
+logo: "/uploads/dashin.gif"
+title: 대신증권 웹접근성 개선
+date: 2014.02 ~ 2015.07
 link: "https://www.music-flo.com/detail/recommend/aydynidlelnadzdadn?recommendType=RC_CF_TR"
 categories:
 - photography

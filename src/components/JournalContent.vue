@@ -13,7 +13,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 p {
     line-height: 1.5;
     font-size: 1.15rem;

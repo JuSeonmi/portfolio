@@ -4,16 +4,22 @@
   "scripts": {
     "build": "gridsome build",
     "develop": "gridsome develop",
-	"explore": "gridsome explore",
-	"predeploy": "npm run build",
-	"deploy": "gh-pages -d dist"
-	
+    "explore": "gridsome explore",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@gridsome/remark-prismjs": "0.1.0",
     "@gridsome/source-filesystem": "^0.5.0",
     "@gridsome/transformer-remark": "^0.3.2",
     "gh-pages": "^2.1.1",
-    "gridsome": "^0.6.7"
+    "gridsome": "^0.6.7",
+    "particles.js": "^2.0.0",
+    "vue-feather-icons": "^5.0.0"
+  },
+  "devDependencies": {
+    "vue-particles": "^1.0.9",
+    "vue-svg-loader": "^0.12.0",
+    "vue-template-compiler": "^2.6.10"
   }
 }

@@ -1,7 +1,7 @@
 ---
-thumbnail: "/uploads/5.jpg"
+logo: "/uploads/g.jpg"
 title: ebay gmarket 운영
-date: 2015.02 ~ 2015.07
+date: 2015.06 ~ 2015.08
 link: "https://www.music-flo.com/detail/recommend/aydynidlelnadzdadn?recommendType=RC_CF_TR"
 categories:
 - photography

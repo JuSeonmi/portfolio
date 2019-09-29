@@ -1,12 +1,45 @@
 <template>
     <div class="skills">
+		<CpuIcon />
 		<h2>Skills</h2>
-		
-    </div>
+		<div class="columns">
+			<div v-for="skill in skills" :key="skill.topic" class="column">
+				<a
+					class="card">
+					<div class="skill-cover" s:style="{ backgroundImage: `url(${image})` }"></div>
+					<div class="skill-description">
+						{{ skill.description }}
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
 </template>
 
 <script>
-export default {}
+import { CpuIcon } from 'vue-feather-icons'
+export default {
+
+	components: {
+		CpuIcon
+	},
+
+	props: {
+		skills: {
+		 type: Array,
+		required: true
+		}
+	},
+
+	computed: {
+		image() {
+		return (
+			this.skill.image ||
+				`https://cdn.jsdelivr.net/gh/github/explore/topics/${this.skill.topic}/${this.skill.topic}.png`
+			)
+		}
+	}
+}
 </script>
 
 <style scoped>

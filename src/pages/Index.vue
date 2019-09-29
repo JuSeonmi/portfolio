@@ -1,12 +1,13 @@
 <template>
   <Layout>
     <div class="container">
+	
       <Hero />
       <ProjectsGrid :projects="$page.projects.edges" />
 	  <LatestJournals :journals="$page.journals.edges" />
-	  <Skills />
+	  <!-- <Skills /> -->
+	  <particles />
     </div>
-    
   </Layout>
 </template>
 
@@ -20,7 +21,7 @@ query Posts {
 		link
         title
         categories
-        thumbnail (quality: 90)
+		logo
         path
       }
     }
@@ -44,13 +45,28 @@ import Hero from "@/components/Hero"
 import ProjectsGrid from "@/components/ProjectsGrid"
 import LatestJournals from "@/components/LatestJournals"
 import Skills from "@/components/Skills"
+import particles from "@/components/particles"
 
 export default {
   components: {
     Hero,
     ProjectsGrid,
 	LatestJournals,
-	Skills
+	Skills,
+	particles
   }
 }
+
 </script>
+
+<style scoped>
+#particles-js {
+	position: fixed !important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+	left: 0;
+	z-index: -1;
+	opacity: .5;
+}
+</style>

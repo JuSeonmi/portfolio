@@ -16,12 +16,15 @@ export default {
     Footer
   }
 }
-</script>
 
+
+</script>
 
 <style>
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -39,7 +42,7 @@ body {
 }
 
 body.dark {
-  --color-base: rgb(0, 0, 0);
+  --color-base: rgb(20, 20, 20);
   --color-base-1: rgb(43, 43, 43);
   --color-contrast: rgb(255, 255, 255);
   --color-contrast-1: rgb(243, 243, 243);
@@ -48,7 +51,10 @@ body.dark {
 h1 {
   letter-spacing: -0.01em;
 }
-
+h2 {
+	display: inline-block;
+	margin-left: 5px;
+}
 .layout {
   padding: 0;
 }
@@ -58,10 +64,15 @@ h1 {
 }
 
 .container {
+
   display: grid;
   grid-template-columns:  1fr;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 2rem;
+}
+.container:before {
+    width: 100%;
+    height: 100%;
 }
 
 @media (min-width: 768px) {
@@ -83,4 +94,5 @@ img {
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
+
 </style>

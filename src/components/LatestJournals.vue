@@ -1,6 +1,7 @@
 <template>
     <div class="posts">
-       <h2>Posts</h2>
+		<Edit3Icon />
+       	<h2>Posts</h2>
         <div class="latest-journals">
 			<div class="journal" v-for="item in journals" :key="item.node.id">
 			<a :href="item.node.link" target="_blank">
@@ -12,42 +13,46 @@
 </template>
 
 <script>
+import { Edit3Icon } from 'vue-feather-icons'
 export default {
     props: {
         journals: {
             type: Array,
             required: true
         }
-    }
+	},
+	
+	components: {
+		Edit3Icon
+	}
 }
 </script>
 
 <style scoped>
-
+.posts {
+	margin-top: 50px;
+}
 .latest-journals {
-      display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;	
-  max-width: 100%;
-  margin: 0 2rem;
-  border: 1px solid var(--color-base-1);
+	margin-top: 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 2rem;
 }
 .latest-journals > .container {
-
   display: flex;
   flex-wrap: wrap;
 }
 .journal {
-  flex: 0 0 100%;
-  display: block;
-  padding: 2rem;
+  display: flex; 
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  min-height: 100px;
   transition: background 0.25s ease;
   text-decoration: none;
-  border-bottom: 1px solid var(--color-base-1);
-}
-
-.journal:last-of-type {
-  border-bottom: 0;
+  background-color: #141414;
+  text-align: center;
 }
 
 .journal:hover {
@@ -63,46 +68,18 @@ export default {
   .journal {
     flex: 0 0 50%;
   }
-  .journal:nth-child(1) {
-    border-right: 1px solid var(--color-base-1);
-    border-bottom: 1px solid var(--color-base-1);
-  }
 
-  .journal:nth-child(2) {
-    border-bottom: 1px solid var(--color-base-1);
-  }
+ 
 
-  .journal:nth-child(3) {
-    border-right: 1px solid var(--color-base-1);
-    border-bottom: 0;
-  }
+
 }
 
 @media (min-width: 920px) {
   .journal {
     flex: 0 0 25%;
   }
-  .journal:nth-child(1) {
-    border: 0;
-    border-right: 1px solid var(--color-base-1);
-  }
 
-  .journal:nth-child(2) {
-    border: 0;
-    border-right: 1px solid var(--color-base-1);
-  }
 
-  .journal:nth-child(3) {
-    border: 0;
-    border-right: 1px solid var(--color-base-1);
-  }
-  .latest-journals {
-    margin: 0;
-    border-left: 0;
-    border-right: 0;
-    border-top: 1px solid var(--color-base-1);
-    border-bottom: 1px solid var(--color-base-1);
-  }
 }
 
 </style>

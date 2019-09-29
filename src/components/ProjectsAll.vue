@@ -3,7 +3,7 @@
 		<LayersIcon />
 		<h2>Projects</h2>
 		<div class="projects_inner">
-			<div class="project" v-for="(item,index) in projects" v-if="index <= 5" :key="item.node.id" >
+			<div class="project" v-for="(item,index) in projects" :key="item.node.id" >
 				<g-link :href="item.node.link" target="_blank" class="project-link">
 					<div class="logo_wrap">
 						<g-image :src="item.node.logo" class="logo" />
@@ -21,10 +21,7 @@
 			</div>
 			
 		</div>
-		
-		<!-- <button v-on:click="toggleOnOff">viewall <ChevronRightIcon /></button>
-		 -->
-		<a href="all" class="btn_viewall">viewall <ChevronRightIcon /></a>
+		<a href="/" class="btn_viewall">prev</a>
 		
 		
     </div>
@@ -46,18 +43,6 @@ export default {
 		LayersIcon,
 		ChevronRightIcon
 	},
-
-	data() {
-        return {
-            statusOn: false
-        };
-	},
-	methods: {
-      toggleOnOff: function() {
-			this.statusOn = !this.statusOn;
-			console.log(this.statusOn);
-		}
-    }
 }
 </script>
 
@@ -65,29 +50,18 @@ export default {
 	svg {
 		vertical-align: -3px;
 	}
-	.feather-chevron-right {
-		vertical-align: middle;
-	}
-	.btn_viewall {
-		display: flex;
-		justify-content: flex-end;
-		margin-top: 10px;
-	}
 	.projects_inner {
 		display: grid;
 		margin-top: 20px;
 		grid-template-columns: 1fr;
-		grid-gap: 2rem;
+		
 	}
 	.project {
-		padding: 20px;
+		padding: 10px;
 		background-color: rgba(255, 255, 255 ,.1);
 		
 	}
-	.project:hover {
-		  border: 1px solid #333;
-		  margin: -1px;
-	}
+
 	.project-link {
 		display: flex;
 		align-items: center;
@@ -101,8 +75,8 @@ export default {
 
 .logo {
 	display: inline-block;
-	max-width: 52px;
-    max-height: 52px;
+	max-width: 30px;
+    max-height: 50px;
 }
 .project-title {
   font-size: 1rem;
@@ -121,17 +95,5 @@ export default {
 }
 
 
-@media (min-width: 900px) {
-  /* .project {
-    grid-column: auto / span 1;
-  } */
-  /* .project:nth-child(3n+1) {
-    grid-column: auto / span 2;
-  } */
-
- .projects_inner {
-	grid-template-columns: 1fr 1fr;
-  }
-}
 
 </style>
