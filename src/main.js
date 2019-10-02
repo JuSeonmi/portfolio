@@ -13,4 +13,6 @@ export default function(Vue, { head }) {
     class: settings.dark_mode ? "dark" : ""
   };
 
+
 }
+

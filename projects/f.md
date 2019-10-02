@@ -2,10 +2,10 @@
 logo: "/uploads/g.jpg"
 title: ebay gmarket 운영
 date: 2015.06 ~ 2015.08
-link: "https://www.music-flo.com/detail/recommend/aydynidlelnadzdadn?recommendType=RC_CF_TR"
+link: "http://www.gmarket.co.kr/"
 categories:
-- photography
-- yellow
+- HTML, CSS, javascript
+
 project_bg_color: ''
 project_fg_color: ''
 

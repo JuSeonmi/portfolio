@@ -47,53 +47,16 @@ export default {
 </script>
 
 <style scoped>
-	svg {
-		vertical-align: -3px;
-	}
+
 	.projects_inner {
 		display: grid;
 		margin-top: 20px;
 		grid-template-columns: 1fr;
+    	grid-gap: 0;
 		
 	}
 	.project {
-		padding: 10px;
-		background-color: rgba(255, 255, 255 ,.1);
-		
+		padding: 10px 20px;
 	}
-
-	.project-link {
-		display: flex;
-		align-items: center;
-		text-decoration: none;
-	}
-
-	.logo_wrap {
-
-		margin-right: 20px;
-	}
-
-.logo {
-	display: inline-block;
-	max-width: 30px;
-    max-height: 50px;
-}
-.project-title {
-  font-size: 1rem;
-  color: var(--color-contrast);
-
-}
-.categories {
-  font-size: 0.8rem;
-  color: var(--color-contrast-1);
-}
-.category {
-  margin-right: 0.8rem;
-}
-.category:last-of-type {
-  margin: 0;
-}
-
-
 
 </style>

@@ -1,11 +1,10 @@
 ---
 logo: "/uploads/kin.png"
-title: 네이버 지식인
+title: 네이버 지식인 메인개편
 date: 2015.08 ~ 2015.11
-link: "https://www.music-flo.com/detail/recommend/aydynidlelnadzdadn?recommendType=RC_CF_TR"
+link: "https://kin.naver.com"
 categories:
-- photography
-- yellow
+- HTML, SASS, gulp, javascript
 project_bg_color: ''
 project_fg_color: ''
 

@@ -1,9 +1,8 @@
 {
-	"footer": "Copyright &copy; 2019",
+	"footer": "Copyright &copy; 2019 ",
 	"dark_mode": true,
 	"site_name": "Nichlas W. Andersen",
-	"site_description": "Creative technologist",
-	"hero_title": "@newhippy",
-	"hero_subtitle": "I'm a happy developer"
+	"site_description": "UI개발자 주선미 포트폴리오",
+	"hero_title": "newhippy",
+	"hero_subtitle": "Creative UI developer<br>나와 함께 우주로 갈사람?"
 }
-  

@@ -4,8 +4,8 @@
 	
       <Hero />
       <ProjectsGrid :projects="$page.projects.edges" />
+	  <Skills />
 	  <LatestJournals :journals="$page.journals.edges" />
-	  <!-- <Skills /> -->
 	  <particles />
     </div>
   </Layout>
@@ -29,6 +29,7 @@ query Posts {
    journals: allJournalPost (perPage: 4) {
     edges {
       node {
+		date (format: "YYYY. MM")
         id
         path
         title

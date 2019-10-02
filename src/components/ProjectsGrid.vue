@@ -1,6 +1,6 @@
 <template>
     <div class="projects">
-		<LayersIcon />
+		<LayersIcon class="icon_heading"/>
 		<h2>Projects</h2>
 		<div class="projects_inner">
 			<div class="project" v-for="(item,index) in projects" v-if="index <= 5" :key="item.node.id" >
@@ -61,77 +61,3 @@ export default {
 }
 </script>
 
-<style scoped>
-	svg {
-		vertical-align: -3px;
-	}
-	.feather-chevron-right {
-		vertical-align: middle;
-	}
-	.btn_viewall {
-		display: flex;
-		justify-content: flex-end;
-		margin-top: 10px;
-	}
-	.projects_inner {
-		display: grid;
-		margin-top: 20px;
-		grid-template-columns: 1fr;
-		grid-gap: 2rem;
-	}
-	.project {
-		padding: 20px;
-		background-color: rgba(255, 255, 255 ,.1);
-		
-	}
-	.project:hover {
-		  border: 1px solid #333;
-		  margin: -1px;
-	}
-	.project-link {
-		display: flex;
-		align-items: center;
-		text-decoration: none;
-	}
-
-	.logo_wrap {
-
-		margin-right: 20px;
-	}
-
-.logo {
-	display: inline-block;
-	max-width: 52px;
-    max-height: 52px;
-}
-.project-title {
-  font-size: 1rem;
-  color: var(--color-contrast);
-
-}
-.categories {
-  font-size: 0.8rem;
-  color: var(--color-contrast-1);
-}
-.category {
-  margin-right: 0.8rem;
-}
-.category:last-of-type {
-  margin: 0;
-}
-
-
-@media (min-width: 900px) {
-  /* .project {
-    grid-column: auto / span 1;
-  } */
-  /* .project:nth-child(3n+1) {
-    grid-column: auto / span 2;
-  } */
-
- .projects_inner {
-	grid-template-columns: 1fr 1fr;
-  }
-}
-
-</style>
