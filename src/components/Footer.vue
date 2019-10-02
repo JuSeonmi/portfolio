@@ -16,9 +16,8 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .footer {
     font-size: 0.8rem;
-
 }
 </style>

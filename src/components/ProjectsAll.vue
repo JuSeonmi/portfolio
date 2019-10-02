@@ -21,7 +21,7 @@
 			</div>
 			
 		</div>
-		<a href="/" class="btn_viewall">prev</a>
+		<a href="/" class="btn_viewall"><ChevronLeftIcon /> prev</a>
 		
 		
     </div>
@@ -30,7 +30,7 @@
 
 
 <script>
-import { LayersIcon, ChevronRightIcon } from 'vue-feather-icons'
+import { LayersIcon, ChevronRightIcon, ChevronLeftIcon } from 'vue-feather-icons'
 export default {
     props: {
         projects: {
@@ -41,7 +41,8 @@ export default {
 	
   	components: {
 		LayersIcon,
-		ChevronRightIcon
+		ChevronRightIcon,
+		ChevronLeftIcon
 	},
 }
 </script>

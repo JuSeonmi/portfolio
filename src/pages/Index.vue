@@ -59,15 +59,3 @@ export default {
 }
 
 </script>
-
-<style scoped>
-#particles-js {
-	position: fixed !important;
-    top: 0;
-    right: 0;
-    bottom: 0;
-	left: 0;
-	z-index: -1;
-	opacity: .5;
-}
-</style>

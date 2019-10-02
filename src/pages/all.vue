@@ -31,14 +31,9 @@ import Hero from "@/components/Hero"
 import ProjectsGrid from "@/components/ProjectsAll"
 
 export default {
-	data() {
-        return {
-            statusOn: true
-        };
-	},
 	components: {
 		Hero,
-		ProjectsGrid,
+		ProjectsGrid
 	}
 }
 </script>

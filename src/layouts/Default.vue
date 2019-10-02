@@ -19,7 +19,7 @@ export default {
 
 </script>
 
-<style>
+<style lang="scss">
 * {
   box-sizing: border-box;
   margin: 0;
@@ -88,9 +88,6 @@ h2 {
 		border-top: 1px solid #4e4e4e;
 	}
 
-	.hero {
-		margin-left: 1.5rem;
-	}
 }
 
 @media (min-width: 768px) {
@@ -128,11 +125,12 @@ img {
 
 	.projects {
 		margin-top: 50px;
+		.hero  + & {
+			margin-top: 0;
+		}
 	}
 
-	.hero + .projects {
-		margin-top: 0;
-	}
+
 	.projects_inner {
 		display: grid;
 		margin-top: 20px;
@@ -191,6 +189,12 @@ img {
 
 	.projects_inner {
 		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (max-width: 768px) {
+	.hero + .projects {
+		margin-top: 30px;
 	}
 }
 </style>

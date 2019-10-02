@@ -19,6 +19,8 @@
   },
   "devDependencies": {
     "file-loader": "^4.2.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.0",
     "vue-particles": "^1.0.9",
     "vue-svg-loader": "^0.12.0",
     "vue-template-compiler": "^2.6.10"

@@ -12,5 +12,4 @@ project_fg_color: ""
 ---
 
 
-dddd
 ![](/uploads/1.png)
