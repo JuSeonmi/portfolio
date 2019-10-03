@@ -67,7 +67,6 @@ h2 {
 }
 
 .container {
-
   display: grid;
   grid-template-columns:  1fr;
   margin: 0 auto;
@@ -87,7 +86,6 @@ h2 {
 		padding-top: 20px;
 		border-top: 1px solid #4e4e4e;
 	}
-
 }
 
 @media (min-width: 768px) {
@@ -129,8 +127,6 @@ img {
 			margin-top: 0;
 		}
 	}
-
-
 	.projects_inner {
 		display: grid;
 		margin-top: 20px;
@@ -163,11 +159,11 @@ img {
 		display: inline-block;
 		max-width: 52px;
 		max-height: 52px;
+		border-radius: 3px;
 	}
 	.project-title {
 		font-size: 1rem;
 		color: var(--color-contrast);
-
 	}
 	.categories {
 		font-size: 0.8rem;

@@ -1,11 +1,10 @@
 ---
 logo: "/uploads/dashin.gif"
-title: 대신증권 웹접근성 개선
+title: 대신증권 웹접근성 개선 및 마크(WA)획득
 date: 2014.02 ~ 2015.07
-link: "https://www.music-flo.com/detail/recommend/aydynidlelnadzdadn?recommendType=RC_CF_TR"
+link: "daishin.com"
 categories:
-- photography
-- yellow
+- html, css, accessibility
 project_bg_color: ''
 project_fg_color: ''
 

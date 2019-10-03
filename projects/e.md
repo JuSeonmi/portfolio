@@ -1,5 +1,5 @@
 ---
-logo: "/uploads/skplanet.jpg"
+logo: "/uploads/skplanet.gif"
 title: SK플래닛 Syrup Store 고도화 
 date: 2015.04 ~ 2015.05
 link: "https://sodar.syrup.co.kr/index.html"

@@ -62,6 +62,7 @@ export default {
 	width: 80px;
 	height: 80px;
 	background-size: cover;
+	border-radius: 6px;
 }
 .skill-description {
 	font-size: 12px;
