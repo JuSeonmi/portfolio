@@ -92,7 +92,7 @@ export default {
 .hero-photo {
 	width: 200px;
 	height: 200px;
-	background-image: url(http://newhippy.cafe24.com/portfolio/images/widthGM.jpg);
+	background-image: url(../assets/png/widthGM.jpg);
 	background-size: cover;
 	background-position: center center;
 	border-radius: 100%;
