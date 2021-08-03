@@ -7,7 +7,7 @@ module.exports = {
   pathPrefix: '/portfolio',
   host: "0.0.0.0",
   titleTemplate: "%s - newhippy",
-  siteDescription: "Creative technologist",
+  siteDescription: "Creative UI developer",
   plugins: [
     {
       use: "@gridsome/source-filesystem",

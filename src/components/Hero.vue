@@ -135,6 +135,7 @@ export default {
 .contact_info .icon {
 	width: 13px;
 	height: 13px;
+	vertical-align: middle;
 }
 @keyframes hover {
   0% {
