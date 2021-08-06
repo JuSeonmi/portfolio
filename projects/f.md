@@ -1,6 +1,6 @@
 ---
 logo: "/uploads/g.jpg"
-title: ebay gmarket 운영
+title: ebay gmarket 모바일 운영
 date: 2015.06 ~ 2015.08
 link: "http://www.gmarket.co.kr/"
 categories:
