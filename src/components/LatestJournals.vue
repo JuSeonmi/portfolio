@@ -1,5 +1,5 @@
 <template>
-	<div class="projects">
+	<section class="projects">
 		<Edit3Icon />
 		<h2>Posts</h2>
 		<div class="projects_inner">
@@ -10,7 +10,7 @@
 				</a>
 			</div>
 		</div>
-	</div>
+	</section>
 </template>
 
 <script>

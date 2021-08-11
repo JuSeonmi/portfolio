@@ -1,5 +1,5 @@
 <template>
-    <div class="projects">
+    <section class="projects">
 		<LayersIcon class="icon_heading"/>
 		<h2>Projects</h2>
 		<div class="projects_inner">
@@ -27,7 +27,7 @@
 		<a href="all" class="btn_viewall">viewall <ChevronRightIcon /></a>
 		
 		
-    </div>
+    </section>
 
 </template>
 

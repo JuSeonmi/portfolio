@@ -1,5 +1,5 @@
 <template>
-	<div class="projects">
+	<section class="projects">
 		<CpuIcon />
 		<h2>Skills</h2>
 		<div class="skills">
@@ -15,7 +15,7 @@
 			</div>
 	
 		</div>
-	</div>
+	</section>
 </template>
 
 <script>
